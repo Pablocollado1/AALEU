@@ -9,34 +9,62 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
-</head>
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <header class="header">
-       
-            <div class="logo">
-                <img src="../../img/AALEU-removebg-preview.png" alt=AALEU>
-            </div>
-            <nav>
-               <ul class="menu">
-                    <li><a href="#">der Start</a></li>
-                    <li><a href="#">Wer sind wir?</a></li>
-                    <li>
-                      <a href="#">Sprachen</a>
-                      <ul>
-                          <li><a href="../../index.html">Spanisch</a></li>
-                          <li><a href="./../ing/ingles.html">Englisch</a></li>
-                          <li><a href="../frances/">Französisch</a></li>
-                          <li><a href="../ale/aleman.html">Deutsch</a></li>
-                          <li><a href="../chino/chino.html">Chinesisch</a></li>
-                      </ul>
-                  </li>
-              </ul>
 
-            </nav>
-            <a class="btn" href="#"><button>Kontakt mit uns</button></a>
-      </header>      
+    <header class="header">
+      <div class="logo">
+          <img src="./img/AALEU-removebg-preview.png" alt="AALEU">
+      </div>
+      <nav>
+          <ul class="menu">
+              <li><a href="../../index.html">Anfang</a></li>
+              <li><a href="../../view/esp/tablon.html">Informationstabelle</a></li>
+              <li>
+                  <a href="#">sprachen</a>
+                  <ul>
+                      <li><a href="../../index.html">Spanisch</a></li>
+                      <li><a href="../../view/ing/ingles.html">Englisch</a></li>
+                      <li><a href="../../view/frances/frances.html">Französisch</a></li>
+                      <li><a href="../../view/ale/aleman.html">Deutsch</a></li>
+                      <li><a href="../../view/chino/chino.html">Chinesisch</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </nav>
+      <a class="btn" href="../frances/colaboraciones.html"><button>Kontaktiere uns</button></a>
+      <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <ul class="menu">
+          
+            <li>
+                <a href="#">Menu</a>
+                <ul>
+                    <li><a href="../../index.html">Spanisch</a></li>
+                    <li><a href="../../view/chino/chino.html">Chinesisch</a></li>
+                    <li><a href="../../view/frances/frances.html">Französisch</a></li>
+                    <li><a href="../../view/ale/aleman.html">Deutsch</a></li>
+                    <li><a href="../../view/ing/ingles.html">Englisch</a></li>
+                    <li><a href="../../index.html">Anfang</a></li>
+                    <li><a href="../../view/esp/tablon.html">Informationstabelle</a></li>
+                </ul>
+      </div>
+  </header>
+  <!-- Resto del contenido -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+        const mobileSubmenu = document.querySelector('.mobile-submenu');
+  
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileSubmenu.classList.toggle('active');
+        });
+    });
+  </script>
 </body>
+
 
 
 <div id="carouselExample" class="carousel slide">
@@ -70,7 +98,7 @@
             <br>
             <div class="clearfix">
               
-              <img src="../../img/Manostierra.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+              <img src="../../img/Manostierra.jpg" class="right-image" alt="...">
             
               <h1 class="texto1">Was ist unser Ziel?</h1>
               <p>
@@ -92,6 +120,8 @@
             <br><br>
             <br><br>
             <br><br>
+            <br><br>
+            
             
 
 
