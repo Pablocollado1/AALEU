@@ -33,26 +33,7 @@ body {
       color: #fff;
     }
 
-    .fotoarriba
-    {
-    top: 0; 
-    left: 0;
-    width: 10px;
-    }
-
-    .txtjuego {
-      margin-top: 13%;
-      font-size: 30px;
-      font-family: 'Press Start 2P', cursive;
-      margin-left: 10%;
-  }
-
-  .imagencentro
-  {
-    justify-content: center;
-    align-items: center;
-  }
-
+    
 
 h2 {
     text-align: center;
@@ -97,9 +78,7 @@ h2 {
     font-size: 20px;
 }
 
-body{
-    background-color: #fff59d;
-}
+
 
 .header{
     background-color: #bd9977;
@@ -533,11 +512,7 @@ main {
     font-size: 14px;
     color: #555;
 }
-.row {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
+
   
 .right-image {
     float: right;
@@ -545,6 +520,13 @@ main {
     max-width: 50%; /* Asegura que la imagen no sea demasiado grande */
 }
 
+.left-image {
+    float: left;
+    margin: 0 0 1em 1em;
+    max-width: 35%; /* Asegura que la imagen no sea demasiado grande */
+    margin-right: 30px;
+    
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -751,6 +733,7 @@ nav {
     .content {
         text-align: center; /* Asegura que el contenido esté centrado */
     }
+
     .right-image {
         float: none;
         display: inline-block;
@@ -758,6 +741,14 @@ nav {
         max-width: 80%; /* Ajusta el tamaño según sea necesario */
     }
 
+    .left-image {
+        float: none;
+        display: inline-block;
+        margin: 1em auto;
+        max-width: 80%; /* Ajusta el tamaño según sea necesario */
+        justify-content: space-between;
+        
+    }
 
     /* Estilos para el pie de página */
     .footer-container {
