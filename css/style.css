@@ -33,7 +33,6 @@ body {
       color: #fff;
     }
 
-    
 
 h2 {
     text-align: center;
@@ -96,7 +95,7 @@ h2 {
 }
 
 .header .logo img{
-    height: 120px;
+    height: 100px;
     width: auto;
     transition: all 0.1s;
 }
@@ -516,16 +515,14 @@ main {
   
 .right-image {
     float: right;
-    margin: 0 0 1em 1em;
-    max-width: 50%; /* Asegura que la imagen no sea demasiado grande */
+    max-width: 100%; /* Asegura que la imagen no sea demasiado grande */
+    width: 50%;
 }
 
 .left-image {
     float: left;
-    margin: 0 0 1em 1em;
-    max-width: 35%; /* Asegura que la imagen no sea demasiado grande */
-    margin-right: 30px;
-    
+    margin: 0 20px 10px 0;
+    width: 50%;
 }
 .header {
     display: flex;
@@ -666,7 +663,7 @@ nav {
 .content img.right-image {
     float: right;
     margin: 0 0 1em 1em;
-    max-width: 50%;
+    max-width: 100%;
 }
     .footer-content-container:nth-of-type(1){
         align-items: flex-start;
@@ -736,17 +733,14 @@ nav {
 
     .right-image {
         float: none;
-        display: inline-block;
-        margin: 1em auto;
-        max-width: 80%; /* Ajusta el tamaño según sea necesario */
+        width: 80%;
+        padding-left: 20%;
     }
 
     .left-image {
         float: none;
-        display: inline-block;
-        margin: 1em auto;
-        max-width: 80%; /* Ajusta el tamaño según sea necesario */
-        justify-content: space-between;
+        width: 80%;
+        padding-left: 20%;
         
     }
 
